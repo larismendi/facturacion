@@ -1,0 +1,68 @@
+body { padding:50px 100px; font:13px/150% Verdana, Tahoma, sans-serif; }
+/* tutorial */
+input, textarea, select { 
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+select { width: 60px; max-width: 60px; }
+select.anno { width: 90px; max-width: 90px; }
+textarea { width: 400px; max-width: 400px; height: 50px; line-height: 150%; }
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+.form label { margin-left: 10px; color: #999999; }
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #617798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/*tabla editable*/
+a{  color: #000;  }  
+a:hover{  text-decoration: none;  } 
+h1{  font-size: 30px; padding: 0; margin: 0;  }  
+h2{  font-size: 20px;  }
+#container{  width: 320px;  margin-left: auto;  margin-right: auto;  padding: 50px 0 0 0;  }  
+.editHover{  background-color: #E8F3FF;  }  
+.editBox{  width: 126px;  min-height: 20px;  padding: 10px 15px;  background-color: #fff;  border: 2px solid #E8F3FF;  }  
+ul{ list-style: none;  }  
+li{ min-height:20px; padding:10px 15px; margin:5px; border-style:solid; border-width:medium; border-color:#CCCCCC; }
+li.noPad{  padding: 0;  width: 126px;  } 
+.btnSave, .btnCancel{  padding: 6px 5px 6px 5px;  }
+.block{ float: left; margin: 20px 0; } 
+ul.col { display: block; float: left; padding-left: 0px; padding-right: 0px; }
+li.count { width:20px; }
+li.descr { width:260px; }
+li.tot { width:50px; }
+
+/*Modal*/
+.tbox {position:absolute; display:none; padding:14px 17px; z-index:900}
+.tinner {padding:15px; -moz-border-radius:5px; border-radius:5px; background:#fff url(images/preload.gif) no-repeat 50% 50%; border-right:1px solid #333; border-bottom:1px solid #333}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:800}
+.tclose {position:absolute; top:0px; right:0px; width:30px; height:30px; cursor:pointer; background:url(images/close.png) no-repeat}
+.tclose:hover {background-position:0 -30px}
+
+#error {background:#ff6969; color:#fff; text-shadow:1px 1px #cf5454; border-right:1px solid #000; border-bottom:1px solid #000; padding:0}
+#error .tcontent {padding:10px 14px 11px; border:1px solid #ffb8b8; -moz-border-radius:5px; border-radius:5px}
+#success {background:#2ea125; color:#fff; text-shadow:1px 1px #1b6116; border-right:1px solid #000; border-bottom:1px solid #000; padding:10; -moz-border-radius:0; border-radius:0}
+#bluemask {background:#4195aa}
+#frameless {padding:0}
+#frameless .tclose {left:6px}
